@@ -18,15 +18,26 @@ Output: "The late fee is $2.50."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
-function calculateLateFee() {
-     const overdueDays=prompt("Enter number of days:");
-      const fee=overdueDays*0.25;
-      console.log(fee);
+// function calculateLateFee(overdueDays,fee) {
+//       overdueDays=prompt("Enter number of days:");
+//       fee=overdueDays*0.25;
+//       console.log(`the late fee is ${fee}`);
+// }
+
+// calculateLateFee();
+function calculateLateFee(overdueDays) {
+   const feePerDay = 0.25;
+   return overdueDays * feePerDay;
 }
 
+const overdueDays = parseInt(prompt("Enter the number of overdue days:"), 10);
 
-
-calculateLateFee();
+if (!isNaN(overdueDays) && overdueDays >= 0) {
+   const fee = calculateLateFee(overdueDays);
+   console.log(`The late fee is $${fee.toFixed(2)}`);
+} else {
+   console.log("Please enter a valid number of overdue days.");
+}
 
 // Extra Task:
 // - Convert the function into a function expression.
