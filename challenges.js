@@ -18,7 +18,15 @@ Output: "The late fee is $2.50."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+function calculateLateFee() {
+     const overdueDays=prompt("Enter number of days:");
+      const fee=overdueDays*0.25;
+      console.log(fee);
+}
 
+
+
+calculateLateFee();
 
 // Extra Task:
 // - Convert the function into a function expression.
@@ -44,12 +52,51 @@ Output: "Red: You are passionate and bold."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
-
-
+ function findColorMeaning(){
+   const color =prompt("Enter your favorite color");
+   switch(color){
+      case "blue":
+         console.log("blue :you love calm and peace");
+      break;
+   case "red":
+      console.log("red : you are passinate and bold");
+      break;
+   case "green":
+      console.log("green: you are connected to nature");
+      break;
+   case "yellow":
+      console.log("yellow :you are radiate and energy");   
+      break;
+   default:
+      console.log(`${color} that is unique choice `);
+   }
+   }
+   findColorMeaning();
+ 
 
 // Extra Task:
 // - Rewrite the function using an arrow function.
-
+  
+ let findColorMeaning2=() =>{
+   let color2 =prompt("enter a color:")
+   switch (color2){
+      case "red":
+         console.log("red : you are passinate and bold");
+         break;
+      case "green":
+         console.log("green: you are connected to nature");
+         break;
+      case "yellow":      
+      console.log("yellow :you are radiate and energy");   
+         break;
+      case "blue":
+         console.log("blue :you love calm and peace");
+         break;
+      default:
+         console.log(`${color} that is unique choice `);
+      }
+ }
+ findColorMeaning2()
 
 
 /*
