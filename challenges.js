@@ -78,7 +78,7 @@ Output: "Red: You are passionate and bold."
 // - Rewrite the function using an arrow function.
   
  let findColorMeaning2=() =>{
-   let color2 =prompt("enter a color:")
+   let color2 =prompt("enter your fav color:")
    switch (color2){
       case "red":
          console.log("red : you are passinate and bold");
@@ -93,7 +93,7 @@ Output: "Red: You are passionate and bold."
          console.log("blue :you love calm and peace");
          break;
       default:
-         console.log(`${color} that is unique choice `);
+         console.log(`${color2} that is unique choice `);
       }
  }
  findColorMeaning2()
@@ -115,7 +115,10 @@ Output: "Case #12345: John Doe's case is now logged."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
-
+function logCase(name,number){
+   console.log(`case ${number} :${name}'s case is now logged`);
+}
+logCase("john doe","12345");
 
 // Extra Task:
 // - Rewrite the function as an arrow function.
@@ -141,11 +144,29 @@ Output: "Amina is present."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+function markAttendance(studentName,isPresent){
+ if(isPresent){
+   console.log(`${studentName} is present`)
+ }
+ else{
+   console.log(`${studentName} is absent`)
+ }
+}
 
+markAttendance("amina",true);
 
 // Extra Task:
 // - Convert the function into a function expression.
-
+ 
+const markAttendance2=function(studentName,isPresent){
+   if(isPresent){
+      console.log(`${studentName} is present`)
+    }
+    else{
+      console.log(`${studentName} is absent`)
+    }
+}
+markAttendance2("cabdi",false)
 
 
 /*
